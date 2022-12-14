@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US House Price Prediction</title>
+</head>
+
+
+<body style="background-color: rgb(206, 224, 134);">
+
+    <h1> US House Price Prediction </h1>
+    <form method="get" action="/predict_price">
+        <!-- Headings for the form -->
+        <div class="headingsContainer">
+            <h3 style="color:rgb(153, 47, 126);">Get US House Price in single click</h3>
+        </div>
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <label for="Income_Area" style="color:rgb(255, 71, 71);">Area wise Income</label><br>
+            <input type="text" placeholder="Income in that Area" name="Income_Area" required>
+            <br><br>
+            <label for="Age of House" style="color:rgb(252, 66, 60);">Enter House Age</label><br>
+            <input type="text" placeholder="Enter House Age" name="House_Age" required>
+            <br><br>
+            <label for="Number of Room" style="color:rgb(252, 66, 60);">Enter Number of Rooms</label><br>
+            <input type="text" placeholder="Enter Number of rooms" name="Rooms_Qty" required>
+            <br><br>
+            <label for="Number of BEDRoom" style="color:rgb(252, 66, 60);">Enter Number of Bedrooms</label><br>
+            <input type="text" placeholder="Enter Number of Bedrooms" name="Bedrooms_Qty" required>
+            <br><br>
+            <label for="Population of that Area" style="color:rgb(252, 66, 60);">Enter Population of that Area</label><br>
+            <input type="text" placeholder="Enter Population of that Area" name="Area_Population" required>
+            <br><br>
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+            <br><br>
+            <h3 style="color:rgb(20, 20, 14);">US House Price will be <b> {{ price }}  $</b> Only </h3>
+        </div>
+    </form>
+
+
+</body>
+</html>
